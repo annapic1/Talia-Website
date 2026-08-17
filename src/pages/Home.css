@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+.home {
+  min-height: 100vh;
+  background: #ffffff;
+  color: #111111;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Header */
+
+.header {
+  width: 100%;
+  padding: 28px 40px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e5e5e5;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header h1 {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
+.photos-link {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #111111;
+  text-decoration: none;
+}
+
+.photos-link:hover {
+  text-decoration: underline;
+}
+
+/* Gallery */
+
+.gallery {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 60px 40px;
+  box-sizing: border-box;
+}
+
+.photo-button {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0 0 80px;
+  border: none;
+  background: none;
+  cursor: zoom-in;
+}
+
+.gallery-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Lightbox */
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 40px;
+  box-sizing: border-box;
+
+  background: rgba(75, 75, 75, 0.9);
+
+  cursor: zoom-out;
+}
+
+.preview-image {
+  max-width: 95vw;
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+
+  cursor: default;
+}
+
+.close-button {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+
+  border: none;
+  background: none;
+
+  color: white;
+  font-size: 42px;
+  font-weight: 300;
+
+  cursor: pointer;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .header {
+    padding: 22px 20px;
+  }
+
+  .header h1 {
+    font-size: 26px;
+  }
+
+  .photos-link {
+    font-size: 15px;
+  }
+
+  .gallery {
+    padding: 30px 20px;
+  }
+
+  .photo-button {
+    margin-bottom: 50px;
+  }
+
+  .lightbox {
+    padding: 20px;
+  }
+
+  .close-button {
+    top: 10px;
+    right: 18px;
+  }
+}
+
+.site-title {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+    color: #111111;
+    text-decoration: none;
+  }
+  
+  .site-title:hover {
+    text-decoration: none;
+  }

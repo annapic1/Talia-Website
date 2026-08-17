@@ -26,7 +26,7 @@ const photos = [
       },
       {
         type: 'image',
-        src: 'https://live.staticflickr.com/65535/55436653411_77bcf2c339_b.jpg',
+        src: 'https://live.staticflickr.com/65535/55436652901_4a0d2f4393_b.jpg',
         alt: '4',
       },
       {

@@ -190,3 +190,25 @@
     right: 18px;
   }
 }
+
+
+
+
+
+
+
+.photos-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  text-align: center;
+}
+
+.photos-content h2 {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #111111;
+}

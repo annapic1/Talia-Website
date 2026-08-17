@@ -16,7 +16,7 @@ function Photos() {
       </header>
 
       <section className="photos-content">
-        <h2>Hi</h2>
+        <h2>in progress...</h2>
       </section>
     </main>
   )

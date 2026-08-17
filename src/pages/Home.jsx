@@ -6,15 +6,36 @@ import { Link } from 'react-router-dom'
 const photos = [
     {
       type: 'image',
-      src: 'https://live.staticflickr.com/65535/55437954526_ddc01c47b2_b.jpg',
+      src: 'https://live.staticflickr.com/65535/55436781239_9655648b51_b.jpg',
       alt: 'Talia photo 1',
     },
-    
     {
-      type: 'video',
-      src: 'https://www.youtube.com/embed/UYuCgFn1T9E',
-      alt: 'Talia video',
-    },
+        type: 'image',
+        src: 'https://live.staticflickr.com/65535/55436653411_77bcf2c339_b.jpg',
+        alt: '2',
+      },
+      {
+        type: 'video',
+        src: 'https://www.youtube.com/embed/UYuCgFn1T9E',
+        alt: 'Talia video',
+      },
+      {
+        type: 'image',
+        src: 'https://live.staticflickr.com/65535/55436816444_ff466e81ca_b.jpg',
+        alt: '3',
+      },
+      {
+        type: 'image',
+        src: 'https://live.staticflickr.com/65535/55436653411_77bcf2c339_b.jpg',
+        alt: '4',
+      },
+      {
+        type: 'image',
+        src: 'https://live.staticflickr.com/65535/55436134176_d3c91fd870_b.jpg',
+        alt: '5',
+      },
+
+
   ]
 
 function Home() {

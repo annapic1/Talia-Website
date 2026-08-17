@@ -2,25 +2,20 @@ import { useEffect, useState } from 'react'
 import './Home.css'
 import { Link } from 'react-router-dom'
 
+
 const photos = [
-  {
-    src: 'https://live.staticflickr.com/65535/55437954526_ddc01c47b2_b.jpg',
-    alt: 'Talia photo 1',
-  },
-  {
-    src: 'https://live.staticflickr.com/65535/55437954526_ddc01c47b2_b.jpg',
-    alt: 'Talia photo 2',
-  },
-  {
-    src: 'https://upload.wikimedia.org/wikipedia/commons/d/da/Zoo_Wuppertal_Schwarzfusskatze.jpg',
-    alt: 'Talia photo 3',
-  },
-  {
-    type: 'video',
-    src: 'https://www.youtube.com/embed/UYuCgFn1T9E',
-    alt: 'Talia video',
-  },
-]
+    {
+      type: 'image',
+      src: 'https://live.staticflickr.com/65535/55437954526_ddc01c47b2_b.jpg',
+      alt: 'Talia photo 1',
+    },
+    
+    {
+      type: 'video',
+      src: 'https://www.youtube.com/embed/UYuCgFn1T9E',
+      alt: 'Talia video',
+    },
+  ]
 
 function Home() {
   const [selectedPhoto, setSelectedPhoto] = useState(null)

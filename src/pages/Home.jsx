@@ -15,6 +15,11 @@ const photos = [
     src: 'https://upload.wikimedia.org/wikipedia/commons/d/da/Zoo_Wuppertal_Schwarzfusskatze.jpg',
     alt: 'Talia photo 3',
   },
+  {
+    type: 'video',
+    src: 'https://www.youtube.com/embed/UYuCgFn1T9E',
+    alt: 'Talia video',
+  },
 ]
 
 function Home() {
@@ -44,21 +49,34 @@ function Home() {
         </header>
 
       
-      <section className="gallery">
-        {photos.map((photo, index) => (
-          <button
-            key={index}
-            className="photo-button"
-            onClick={() => setSelectedPhoto(photo)}
-          >
-            <img
-              src={photo.src}
-              alt={photo.alt}
-              className="gallery-image"
-            />
-          </button>
-        ))}
-      </section>
+        <section className="gallery">
+            {photos.map((photo, index) => (
+                <div key={index} className="gallery-item">
+                {photo.type === 'image' ? (
+                    <button
+                    className="photo-button"
+                    onClick={() => setSelectedPhoto(photo)}
+                    >
+                    <img
+                        src={photo.src}
+                        alt={photo.alt}
+                        className="gallery-image"
+                    />
+                    </button>
+                ) : (
+                    <div className="video-container">
+                    <iframe
+                        src={photo.src}
+                        title={photo.alt}
+                        className="gallery-video"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                    />
+                    </div>
+                )}
+                </div>
+            ))}
+            </section>
 
       {selectedPhoto && (
         <div
